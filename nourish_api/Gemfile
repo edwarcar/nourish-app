@@ -18,6 +18,9 @@ gem 'puma', '~> 3.7'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+#gem 'devise'
+gem 'devise_token_auth'
+gem 'omniauth'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -25,10 +28,15 @@ gem 'puma', '~> 3.7'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
 
+# active-model-serializer for effectively nesting JSON responses
+gem 'active_model_serializers'
+
 # A plugin for versioning Rails based RESTful APIs.
 gem 'versionist'
 
 group :development, :test do
+  gem 'rb-fsevent'
+  gem 'ruby_dep'
   gem 'rspec-rails', '~> 3.5'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
