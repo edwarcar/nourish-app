@@ -29,6 +29,7 @@
     "materialize-css": "^0.100.2",
     "node-sass-loader": "^0.1.7",
     "rxjs": "^6.0.0",
+    "rxjs-compat": "^6.1.0",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {

@@ -2,6 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule }    from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
 import { Angular2TokenService } from 'angular2-token';
 import { MaterializeModule } from 'angular2-materialize';
@@ -10,6 +13,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { AuthDialogComponent } from './auth-dialog/auth-dialog.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { RegisterFormComponent } from './register-form/register-form.component';
+
 
 import { DatabaseService } from './database.service'; 
 
@@ -25,7 +29,7 @@ import { DatabaseService } from './database.service';
   imports: [
     BrowserModule,
     FormsModule,
-    // HttpModule,
+    HttpModule,
     AppRoutingModule,
     MaterializeModule,
     //RouterModule,
