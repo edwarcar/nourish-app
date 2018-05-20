@@ -2,7 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialAppModule } from './ngmaterial.module';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CalendarModule } from 'angular-calendar';
 
 import { AppComponent } from './app.component';
 
@@ -31,8 +32,9 @@ import { RecipeformComponent } from './components/recipeform/recipeform.componen
     BrowserModule,
     BrowserAnimationsModule,
     MaterialAppModule,
-    ReactiveFormsModule,
     AppRoutingModule,
+    ReactiveFormsModule,
+    CalendarModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

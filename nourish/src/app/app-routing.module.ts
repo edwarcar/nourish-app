@@ -6,6 +6,7 @@ import { BrowseComponent } from './components/browse/browse.component';
 import { RecipeComponent } from './components/recipe/recipe.component';
 import { MyrecipesComponent } from './components/myrecipes/myrecipes.component';
 import { RecipeformComponent } from './components/recipeform/recipeform.component';
+import { CalendarComponent } from './components/calendar/calendar.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'recipes', component: MyrecipesComponent},
   { path: 'create', component: RecipeformComponent },
   { path: 'browse', component: BrowseComponent },
+  { path: 'calendar', component: CalendarComponent },
   ]; 
 
 @NgModule({

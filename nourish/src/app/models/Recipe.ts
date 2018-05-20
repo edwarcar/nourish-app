@@ -1,5 +1,6 @@
 export interface Recipe {
   recipeName: string,
   ingredients: string[],
-  steps: string[]
+  steps: string[],
+  hide?: true
 }
